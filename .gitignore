@@ -1,0 +1,75 @@
+# Unreal Engine 5.5.4 - Best Practice .gitignore
+
+# Build and intermediate folders
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+Build/
+Restores/
+
+# User-specific and local config
+.vscode/
+.idea/
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Compiled source files
+*.pdb
+*.obj
+*.exe
+*.dll
+*.app
+*.dylib
+*.icns
+*.lib
+*.a
+*.exp
+*.log
+
+# Unreal project user settings
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+*.sln
+*.xcodeproj
+*.xcworkspace
+*.xcconfig
+
+# Mac and system files
+.DS_Store
+Thumbs.db
+
+# Crash and backup files
+*.dmp
+*.tmp
+*.bak
+*.backup
+*.swp
+*.swo
+
+# Auto-generated files by Unreal
+*.generated.*
+*.pyc
+
+# Ignore local plugin binaries
+Plugins/*/Binaries/
+Plugins/*/Intermediate/
+
+# Ignore local content derived data
+Content/Developers/
+Content/Collections/
+Content/StarterContent/
+
+# Ignore config files that are user-specific
+Config/DefaultEditorPerProjectUserSettings.ini
+Config/DefaultEditorUserSettings.ini
+
+# Ignore Git LFS pointer files if not using LFS
+*.lfs
+
+# 
