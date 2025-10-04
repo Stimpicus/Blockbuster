@@ -57,6 +57,10 @@ void ABlockbusterCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInp
 		// Looking/Aiming
 		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &ABlockbusterCharacter::LookInput);
 		EnhancedInputComponent->BindAction(MouseLookAction, ETriggerEvent::Triggered, this, &ABlockbusterCharacter::LookInput);
+
+		// Sprinting
+		EnhancedInputComponent->BindAction(SprintAction, ETriggerEvent::Started, this, &ABlockbusterCharacter::DoStartSprint);
+		EnhancedInputComponent->BindAction(SprintAction, ETriggerEvent::Completed, this, &ABlockbusterCharacter::DoEndSprint);
 	}
 	else
 	{
@@ -115,4 +119,31 @@ void ABlockbusterCharacter::DoJumpEnd()
 {
 	// pass StopJumping to the character
 	StopJumping();
+}
+
+void ABlockbusterCharacter::DoStartSprint()
+{
+	if (!bSprinting)
+	{
+		bSprinting = true;
+		GetCharacterMovement()->MaxWalkSpeed = SprintSpeed;
+		OnSprintStateChanged.Broadcast(bSprinting);
+	}
+}
+
+void ABlockbusterCharacter::DoEndSprint()
+{
+	if (bSprinting)
+	{
+		bSprinting = false;
+		GetCharacterMovement()->MaxWalkSpeed = WalkSpeed;
+		OnSprintStateChanged.Broadcast(bSprinting);
+	}
+}
+
+void ABlockbusterCharacter::BeginPlay()
+{
+	Super::BeginPlay();
+	// Set initial walk speed
+	GetCharacterMovement()->MaxWalkSpeed = WalkSpeed;
 }

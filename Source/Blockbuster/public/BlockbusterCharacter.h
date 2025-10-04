@@ -14,72 +14,97 @@ class UInputAction;
 struct FInputActionValue;
 
 DECLARE_LOG_CATEGORY_EXTERN(LogBlockbusterCharacter, Log, All);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FSprintStateChangedDelegate, bool, bSprinting);
 
-/**
- *  A basic first person character
- */
 UCLASS(abstract)
 class ABlockbusterCharacter : public ACharacter
 {
 	GENERATED_BODY()
 
-	/** Pawn mesh: first person view (arms; seen only by self) */
+	// Pawn mesh: first person view (arms; seen only by self)
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
 	USkeletalMeshComponent* FirstPersonMesh;
 
-	/** First person camera */
+	// First person camera
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
 	UCameraComponent* FirstPersonCameraComponent;
 
 public:
 	ABlockbusterCharacter();
 
-	/** Returns the first person mesh **/
+	// Returns the first person mesh
 	USkeletalMeshComponent* GetFirstPersonMesh() const { return FirstPersonMesh; }
 
-	/** Returns first person camera component **/
+	// Returns first person camera component
 	UCameraComponent* GetFirstPersonCameraComponent() const { return FirstPersonCameraComponent; }
 
+	// Delegate called when we start and stop sprinting
+	FSprintStateChangedDelegate OnSprintStateChanged;
+
 protected:
-	/** Jump Input Action */
+	// Set default sprint state
+	bool bSprinting = false;
+
+	// Set default walk speed
+	float WalkSpeed = 300.f;
+
+	// Set default sprint speed
+	float SprintSpeed = 600.f;
+
+	// Sprint input action
+	UPROPERTY(EditAnywhere, Category = "Input")
+	UInputAction* SprintAction;
+
+	// Jump input Action
 	UPROPERTY(EditAnywhere, Category = "Input")
 	UInputAction* JumpAction;
 
-	/** Move Input Action */
+	// Move input Action
 	UPROPERTY(EditAnywhere, Category = "Input")
 	UInputAction* MoveAction;
 
-	/** Look Input Action */
+	// Look input Action
 	UPROPERTY(EditAnywhere, Category = "Input")
 	class UInputAction* LookAction;
 
-	/** Mouse Look Input Action */
+	// Mouse look input Action
 	UPROPERTY(EditAnywhere, Category = "Input")
 	class UInputAction* MouseLookAction;
 
-	/** Called from Input Actions for movement input */
+	// Called from input actions for movement input
 	void MoveInput(const FInputActionValue& Value);
 
-	/** Called from Input Actions for looking input */
+	// Called from input actions for looking input
 	void LookInput(const FInputActionValue& Value);
 
-	/** Handles aim inputs from either controls or UI interfaces */
+	// Handles aim inputs from either controls or UI interfaces
 	UFUNCTION(BlueprintCallable, Category = "Input")
 	virtual void DoAim(float Yaw, float Pitch);
 
-	/** Handles move inputs from either controls or UI interfaces */
+	// Handles move inputs from either controls or UI interfaces
 	UFUNCTION(BlueprintCallable, Category = "Input")
 	virtual void DoMove(float Right, float Forward);
 
-	/** Handles jump start inputs from either controls or UI interfaces */
+	// Handles jump start inputs from either controls or UI interfaces
 	UFUNCTION(BlueprintCallable, Category = "Input")
 	virtual void DoJumpStart();
 
-	/** Handles jump end inputs from either controls or UI interfaces */
+	// Handles jump end inputs from either controls or UI interfaces
 	UFUNCTION(BlueprintCallable, Category = "Input")
 	virtual void DoJumpEnd();
 
-	/** Set up input action bindings */
+	// Start sprinting
+	UFUNCTION(BlueprintCallable, Category = "Input")
+	void DoStartSprint();
+
+	// Stop sprinting
+	UFUNCTION(BlueprintCallable, Category = "Input")
+	void DoEndSprint();
+
+	// Set up input action bindings
 	virtual void SetupPlayerInputComponent(UInputComponent* InputComponent) override;
+
+	// Gameplay initialization
+	virtual void BeginPlay() override;
 };
 
