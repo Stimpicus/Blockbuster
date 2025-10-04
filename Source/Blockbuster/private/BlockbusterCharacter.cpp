@@ -13,21 +13,17 @@
 
 ABlockbusterCharacter::ABlockbusterCharacter()
 {
-	// Establish replication
 	bReplicates = true;
 	SetReplicateMovement(true);
 
-	// Set size for collision capsule
 	GetCapsuleComponent()->InitCapsuleSize(55.f, 96.0f);
 
-	// Create first person mesh that only viewed by character's owner
 	FirstPersonMesh = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("First Person Mesh"));
 	FirstPersonMesh->SetupAttachment(GetMesh());
 	FirstPersonMesh->SetOnlyOwnerSee(true);
 	FirstPersonMesh->FirstPersonPrimitiveType = EFirstPersonPrimitiveType::FirstPerson;
 	FirstPersonMesh->SetCollisionProfileName(FName("NoCollision"));
 
-	// Create first person camera component	
 	FirstPersonCameraComponent = CreateDefaultSubobject<UCameraComponent>(TEXT("First Person Camera"));
 	FirstPersonCameraComponent->SetupAttachment(FirstPersonMesh, FName("head"));
 	FirstPersonCameraComponent->SetRelativeLocationAndRotation(FVector(-2.8f, 5.89f, 0.0f), FRotator(0.0f, 90.0f, -90.0f));
@@ -37,12 +33,10 @@ ABlockbusterCharacter::ABlockbusterCharacter()
 	FirstPersonCameraComponent->FirstPersonFieldOfView = 70.0f;
 	FirstPersonCameraComponent->FirstPersonScale = 0.6f;
 
-	// Configure character comps
 	GetMesh()->SetOwnerNoSee(true);
 	GetMesh()->FirstPersonPrimitiveType = EFirstPersonPrimitiveType::WorldSpaceRepresentation;
 	GetCapsuleComponent()->SetCapsuleSize(34.0f, 96.0f);
 
-	// Configure character movement
 	GetCharacterMovement()->BrakingDecelerationFalling = 1500.0f;
 	GetCharacterMovement()->AirControl = 0.5f;
 }
@@ -50,27 +44,18 @@ ABlockbusterCharacter::ABlockbusterCharacter()
 void ABlockbusterCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
 {
 	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
-
 	DOREPLIFETIME(ABlockbusterCharacter, bSprinting);
 }
 
 void ABlockbusterCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
-	// Set up action bindings
 	if (UEnhancedInputComponent* EnhancedInputComponent = Cast<UEnhancedInputComponent>(PlayerInputComponent))
 	{
-		// Jumping
 		EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Started, this, &ABlockbusterCharacter::DoJumpStart);
 		EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Completed, this, &ABlockbusterCharacter::DoJumpEnd);
-
-		// Moving
 		EnhancedInputComponent->BindAction(MoveAction, ETriggerEvent::Triggered, this, &ABlockbusterCharacter::MoveInput);
-
-		// Looking/Aiming
 		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &ABlockbusterCharacter::LookInput);
 		EnhancedInputComponent->BindAction(MouseLookAction, ETriggerEvent::Triggered, this, &ABlockbusterCharacter::LookInput);
-
-		// Sprinting
 		EnhancedInputComponent->BindAction(SprintAction, ETriggerEvent::Started, this, &ABlockbusterCharacter::DoStartSprint);
 		EnhancedInputComponent->BindAction(SprintAction, ETriggerEvent::Completed, this, &ABlockbusterCharacter::DoEndSprint);
 	}
@@ -83,20 +68,14 @@ void ABlockbusterCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInp
 
 void ABlockbusterCharacter::MoveInput(const FInputActionValue& Value)
 {
-	// get the Vector2D move axis
 	FVector2D MovementVector = Value.Get<FVector2D>();
-
-	// pass the axis values to the move input
 	DoMove(MovementVector.X, MovementVector.Y);
 
 }
 
 void ABlockbusterCharacter::LookInput(const FInputActionValue& Value)
 {
-	// get the Vector2D look axis
 	FVector2D LookAxisVector = Value.Get<FVector2D>();
-
-	// pass the axis values to the aim input
 	DoAim(LookAxisVector.X, LookAxisVector.Y);
 
 }
@@ -105,7 +84,6 @@ void ABlockbusterCharacter::DoAim(float Yaw, float Pitch)
 {
 	if (GetController())
 	{
-		// pass the rotation inputs
 		AddControllerYawInput(Yaw);
 		AddControllerPitchInput(Pitch);
 	}
@@ -115,7 +93,6 @@ void ABlockbusterCharacter::DoMove(float Right, float Forward)
 {
 	if (GetController())
 	{
-		// pass the move inputs
 		AddMovementInput(GetActorRightVector(), Right);
 		AddMovementInput(GetActorForwardVector(), Forward);
 	}
@@ -123,13 +100,11 @@ void ABlockbusterCharacter::DoMove(float Right, float Forward)
 
 void ABlockbusterCharacter::DoJumpStart()
 {
-	// pass Jump to the character
 	Jump();
 }
 
 void ABlockbusterCharacter::DoJumpEnd()
 {
-	// pass StopJumping to the character
 	StopJumping();
 }
 
@@ -138,7 +113,6 @@ void ABlockbusterCharacter::DoStartSprint()
 	if (HasAuthority())
 	{
 		bSprinting = true;
-		GetCharacterMovement()->MaxWalkSpeed = SprintSpeed;
 		OnSprintStateChanged.Broadcast(bSprinting);
 	}
 	else
@@ -152,7 +126,6 @@ void ABlockbusterCharacter::DoEndSprint()
 	if (HasAuthority())
 	{
 		bSprinting = false;
-		GetCharacterMovement()->MaxWalkSpeed = WalkSpeed;
 		OnSprintStateChanged.Broadcast(bSprinting);
 	}
 	else
@@ -171,9 +144,14 @@ void ABlockbusterCharacter::Server_StopSprint_Implementation()
 	DoEndSprint();
 }
 
+void ABlockbusterCharacter::OnRep_bSprinting()
+{
+	GetCharacterMovement()->MaxWalkSpeed = bSprinting ? SprintSpeed : WalkSpeed;
+	OnSprintStateChanged.Broadcast(bSprinting);
+}
+
 void ABlockbusterCharacter::BeginPlay()
 {
 	Super::BeginPlay();
-	// Set initial walk speed
 	GetCharacterMovement()->MaxWalkSpeed = WalkSpeed;
 }
