@@ -135,22 +135,40 @@ void ABlockbusterCharacter::DoJumpEnd()
 
 void ABlockbusterCharacter::DoStartSprint()
 {
-	if (!bSprinting)
+	if (HasAuthority())
 	{
 		bSprinting = true;
 		GetCharacterMovement()->MaxWalkSpeed = SprintSpeed;
 		OnSprintStateChanged.Broadcast(bSprinting);
 	}
+	else
+	{
+		Server_StartSprint();
+	}
 }
 
 void ABlockbusterCharacter::DoEndSprint()
 {
-	if (bSprinting)
+	if (HasAuthority())
 	{
 		bSprinting = false;
 		GetCharacterMovement()->MaxWalkSpeed = WalkSpeed;
 		OnSprintStateChanged.Broadcast(bSprinting);
 	}
+	else
+	{
+		Server_StopSprint();
+	}
+}
+
+void ABlockbusterCharacter::Server_StartSprint_Implementation()
+{
+	DoStartSprint();
+}
+
+void ABlockbusterCharacter::Server_StopSprint_Implementation()
+{
+	DoEndSprint();
 }
 
 void ABlockbusterCharacter::BeginPlay()

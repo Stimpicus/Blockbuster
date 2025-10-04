@@ -100,10 +100,14 @@ protected:
 	// Start sprinting
 	UFUNCTION(BlueprintCallable, Category = "Input")
 	void DoStartSprint();
+	UFUNCTION(Server, Reliable)
+	void Server_StartSprint();
 
 	// Stop sprinting
 	UFUNCTION(BlueprintCallable, Category = "Input")
 	void DoEndSprint();
+	UFUNCTION(Server, Reliable)
+	void Server_StopSprint();
 
 	// Set up input action bindings
 	virtual void SetupPlayerInputComponent(UInputComponent* InputComponent) override;
