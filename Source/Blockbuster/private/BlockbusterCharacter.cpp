@@ -6,12 +6,17 @@
 #include "Components/CapsuleComponent.h"
 #include "Components/SkeletalMeshComponent.h"
 #include "EnhancedInputComponent.h"
-#include "InputActionValue.h"
 #include "GameFramework/CharacterMovementComponent.h"
+#include "InputActionValue.h"
+#include "Net/UnrealNetwork.h"
 #include "Blockbuster.h"
 
 ABlockbusterCharacter::ABlockbusterCharacter()
 {
+	// Establish replication
+	bReplicates = true;
+	SetReplicateMovement(true);
+
 	// Set size for collision capsule
 	GetCapsuleComponent()->InitCapsuleSize(55.f, 96.0f);
 
@@ -40,6 +45,13 @@ ABlockbusterCharacter::ABlockbusterCharacter()
 	// Configure character movement
 	GetCharacterMovement()->BrakingDecelerationFalling = 1500.0f;
 	GetCharacterMovement()->AirControl = 0.5f;
+}
+
+void ABlockbusterCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
+{
+	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
+
+	DOREPLIFETIME(ABlockbusterCharacter, bSprinting);
 }
 
 void ABlockbusterCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)

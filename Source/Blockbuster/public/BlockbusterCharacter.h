@@ -32,6 +32,9 @@ class ABlockbusterCharacter : public ACharacter
 public:
 	ABlockbusterCharacter();
 
+	// Replicate to everyone
+	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
+
 	// Returns the first person mesh
 	USkeletalMeshComponent* GetFirstPersonMesh() const { return FirstPersonMesh; }
 
@@ -43,6 +46,7 @@ public:
 
 protected:
 	// Set default sprint state
+	UPROPERTY(Replicated)
 	bool bSprinting = false;
 
 	// Set default walk speed
