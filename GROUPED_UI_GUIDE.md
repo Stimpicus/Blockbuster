@@ -122,14 +122,14 @@ The underlying JSON format remains unchanged. All changes are compatible with ex
 
 ## Troubleshooting
 
-**Q: I expanded a group but don't see the items**  
+**Q: I expanded a group but don't see the items**
 A: Make sure you clicked the ▶ button next to the group name. It should change to ▼ when expanded.
 
-**Q: The auto-calculated colors don't look right**  
+**Q: The auto-calculated colors don't look right**
 A: You can manually override any Shade or Highlight by expanding the group and clicking that specific color entry.
 
-**Q: Can I apply different colors to individual items in a group?**  
+**Q: Can I apply different colors to individual items in a group?**
 A: Yes! Expand the group and use the individual item color pickers. Group-level colors are just a convenience feature.
 
-**Q: What happens to items not in Clothing or Attachments?**  
+**Q: What happens to items not in Clothing or Attachments?**
 A: They appear in the "Other Items" group, which works the same way but doesn't have group-level color selection.
