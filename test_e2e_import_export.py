@@ -7,6 +7,7 @@ This test simulates the actual GUI workflow without requiring Tkinter.
 import json
 import sys
 import os
+import tempfile
 from PIL import Image
 from collections import Counter
 
@@ -117,7 +118,8 @@ def simulate_export(color_entries, parent_regions, output_path):
         color_hex = entry.color.lstrip('#')
         try:
             r, g, b = tuple(int(color_hex[i:i+2], 16) for i in (0, 2, 4))
-        except:
+        except (ValueError, IndexError):
+            # Skip invalid color values
             continue
         
         # Fill the region
@@ -161,7 +163,7 @@ def main():
     print(f"  Imported {updated_count} regions with non-black colors")
     
     # Simulate export
-    output_path = "/tmp/integration_test_output.png"
+    output_path = os.path.join(tempfile.gettempdir(), 'integration_test_output.png')
     print(f"\nExporting to {output_path}...")
     output_img = simulate_export(color_entries, parent_regions, output_path)
     print(f"  Export complete")
@@ -211,35 +213,38 @@ def main():
     # Test some actual colored regions to make sure they work
     print("\n3. Testing sample colored regions")
     
-    # Find a few non-black, non-parent regions and test them
-    test_regions = [
-        ("0.Torso.Color 1.Shade", (32, 0)),
-        ("6.Arm Attire Left.Color 1", (64, 0)),
-        ("27.Teeth.Color 1", (192, 640)),
-    ]
+    # Dynamically find a few non-black, non-parent regions with colors
+    test_regions = []
+    for path, entry in color_entries.items():
+        if (path not in parent_regions and 
+            entry.color and 
+            entry.color != "#000000" and
+            len(test_regions) < 3):
+            test_regions.append(path)
     
-    all_passed = True
-    for path, (x, y) in test_regions:
-        if path in color_entries:
+    if not test_regions:
+        print("   Warning: No colored leaf regions found for testing")
+    else:
+        all_passed = True
+        for path in test_regions:
             entry = color_entries[path]
-            if entry.color and entry.color != "#000000" and path not in parent_regions:
-                # Check if output matches the imported color
-                output_color = output_pixels[entry.x, entry.y]
-                output_hex = f"#{output_color[0]:02x}{output_color[1]:02x}{output_color[2]:02x}"
-                
-                print(f"   Region {path}")
-                print(f"     Position: ({entry.x}, {entry.y})")
-                print(f"     Imported: {entry.color}")
-                print(f"     Output: {output_hex}")
-                
-                if output_hex == entry.color:
-                    print(f"     ✓ PASS")
-                else:
-                    print(f"     ✗ FAIL: Mismatch")
-                    all_passed = False
-    
-    if not all_passed:
-        return 1
+            # Check if output matches the imported color
+            output_color = output_pixels[entry.x, entry.y]
+            output_hex = f"#{output_color[0]:02x}{output_color[1]:02x}{output_color[2]:02x}"
+            
+            print(f"   Region {path}")
+            print(f"     Position: ({entry.x}, {entry.y})")
+            print(f"     Imported: {entry.color}")
+            print(f"     Output: {output_hex}")
+            
+            if output_hex == entry.color:
+                print(f"     ✓ PASS")
+            else:
+                print(f"     ✗ FAIL: Mismatch")
+                all_passed = False
+        
+        if not all_passed:
+            return 1
     
     print("\n=== All Tests Passed! ===")
     return 0
