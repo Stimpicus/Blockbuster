@@ -86,5 +86,7 @@ dist/
 *.spec
 test_palette_output.png
 example_palette_preview.png
+demo_preview.png
+demo_preview_small.png
 
 # 
