@@ -1,0 +1,4689 @@
+[
+  {
+    "Torso": {
+      "Start X": "0",
+      "Start Y": "0",
+      "Width": "64",
+      "Height": "320",
+      "Color": "",
+      "Color 1": {
+        "Start X": "0",
+        "Start Y": "0",
+        "Width": "32",
+        "Height": "64",
+        "Color": "#FF0000",
+        "Shade": {
+          "Start X": "32",
+          "Start Y": "0",
+          "Width": "32",
+          "Height": "32",
+          "Color": "#AA0000"
+        },
+        "Highlight": {
+          "Start X": "32",
+          "Start Y": "32",
+          "Width": "32",
+          "Height": "32",
+          "Color": "#FF5555"
+        }
+      },
+      "Color 2": {
+        "Start X": "0",
+        "Start Y": "64",
+        "Width": "32",
+        "Height": "64",
+        "Color": "#CC0000",
+        "Shade": {
+          "Start X": "32",
+          "Start Y": "64",
+          "Width": "32",
+          "Height": "32",
+          "Color": "#880000"
+        },
+        "Highlight": {
+          "Start X": "32",
+          "Start Y": "96",
+          "Width": "32",
+          "Height": "32",
+          "Color": "#FF3333"
+        }
+      },
+      "Color 3": {
+        "Start X": "0",
+        "Start Y": "128",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "32",
+          "Start Y": "128",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "32",
+          "Start Y": "160",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 4": {
+        "Start X": "0",
+        "Start Y": "192",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "32",
+          "Start Y": "192",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "32",
+          "Start Y": "224",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 5": {
+        "Start X": "0",
+        "Start Y": "256",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "32",
+          "Start Y": "256",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "32",
+          "Start Y": "288",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      }
+    }
+  },
+  {
+    "Hips": {
+      "Start X": "0",
+      "Start Y": "320",
+      "Width": "64",
+      "Height": "320",
+      "Color": "",
+      "Color 1": {
+        "Start X": "0",
+        "Start Y": "320",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "32",
+          "Start Y": "320",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "32",
+          "Start Y": "352",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 2": {
+        "Start X": "0",
+        "Start Y": "384",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "32",
+          "Start Y": "384",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "32",
+          "Start Y": "416",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 3": {
+        "Start X": "0",
+        "Start Y": "448",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "32",
+          "Start Y": "448",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "32",
+          "Start Y": "480",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 4": {
+        "Start X": "0",
+        "Start Y": "512",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "32",
+          "Start Y": "512",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "32",
+          "Start Y": "544",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 5": {
+        "Start X": "0",
+        "Start Y": "576",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "32",
+          "Start Y": "576",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "32",
+          "Start Y": "608",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      }
+    }
+  },
+  {
+    "Skin": {
+      "Start X": "0",
+      "Start Y": "640",
+      "Width": "64",
+      "Height": "192",
+      "Color": "",
+      "Color 1": {
+        "Start X": "0",
+        "Start Y": "640",
+        "Width": "64",
+        "Height": "64",
+        "Color": "#FFDBAC"
+      },
+      "Color 2": {
+        "Start X": "0",
+        "Start Y": "704",
+        "Width": "64",
+        "Height": "64",
+        "Color": "#F1C27D"
+      },
+      "Color 3": {
+        "Start X": "0",
+        "Start Y": "768",
+        "Width": "64",
+        "Height": "64",
+        "Color": "#E0AC69"
+      }
+    }
+  },
+  {
+    "Scar": {
+      "Start X": "0",
+      "Start Y": "832",
+      "Width": "64",
+      "Height": "64",
+      "Color": ""
+    }
+  },
+  {
+    "Lips": {
+      "Start X": "0",
+      "Start Y": "896",
+      "Width": "64",
+      "Height": "64",
+      "Color": ""
+    }
+  },
+  {
+    "Arm Attire Left": {
+      "Start X": "64",
+      "Start Y": "0",
+      "Width": "64",
+      "Height": "320",
+      "Color": "",
+      "Color 1": {
+        "Start X": "64",
+        "Start Y": "0",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "96",
+          "Start Y": "0",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "96",
+          "Start Y": "32",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 2": {
+        "Start X": "64",
+        "Start Y": "64",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "96",
+          "Start Y": "64",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "96",
+          "Start Y": "96",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 3": {
+        "Start X": "64",
+        "Start Y": "128",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "96",
+          "Start Y": "128",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "96",
+          "Start Y": "160",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 4": {
+        "Start X": "64",
+        "Start Y": "192",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "96",
+          "Start Y": "192",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "96",
+          "Start Y": "224",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 5": {
+        "Start X": "64",
+        "Start Y": "256",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "96",
+          "Start Y": "256",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "96",
+          "Start Y": "288",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      }
+    }
+  },
+  {
+    "Leg Left": {
+      "Start X": "64",
+      "Start Y": "320",
+      "Width": "64",
+      "Height": "320",
+      "Color": "",
+      "Color 1": {
+        "Start X": "64",
+        "Start Y": "320",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "96",
+          "Start Y": "320",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "96",
+          "Start Y": "352",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 2": {
+        "Start X": "64",
+        "Start Y": "384",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "96",
+          "Start Y": "384",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "96",
+          "Start Y": "416",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 3": {
+        "Start X": "64",
+        "Start Y": "448",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "96",
+          "Start Y": "448",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "96",
+          "Start Y": "480",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 4": {
+        "Start X": "64",
+        "Start Y": "512",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "96",
+          "Start Y": "512",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "96",
+          "Start Y": "544",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 5": {
+        "Start X": "64",
+        "Start Y": "576",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "96",
+          "Start Y": "576",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "96",
+          "Start Y": "608",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      }
+    }
+  },
+  {
+    "Ear Left": {
+      "Start X": "64",
+      "Start Y": "640",
+      "Width": "64",
+      "Height": "64",
+      "Color": ""
+    }
+  },
+  {
+    "Eyelid Right": {
+      "Start X": "64",
+      "Start Y": "704",
+      "Width": "64",
+      "Height": "64",
+      "Color": ""
+    }
+  },
+  {
+    "Fingernail Left": {
+      "Start X": "64",
+      "Start Y": "768",
+      "Width": "64",
+      "Height": "64",
+      "Color": ""
+    }
+  },
+  {
+    "Tonail Left": {
+      "Start X": "64",
+      "Start Y": "832",
+      "Width": "64",
+      "Height": "64",
+      "Color": ""
+    }
+  },
+  {
+    "Nose": {
+      "Start X": "64",
+      "Start Y": "896",
+      "Width": "64",
+      "Height": "64",
+      "Color": ""
+    }
+  },
+  {
+    "Arm Attire Right": {
+      "Start X": "128",
+      "Start Y": "0",
+      "Width": "64",
+      "Height": "320",
+      "Color": "",
+      "Color 1": {
+        "Start X": "128",
+        "Start Y": "0",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "160",
+          "Start Y": "0",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "160",
+          "Start Y": "32",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 2": {
+        "Start X": "128",
+        "Start Y": "64",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "160",
+          "Start Y": "64",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "160",
+          "Start Y": "96",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 3": {
+        "Start X": "128",
+        "Start Y": "128",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "160",
+          "Start Y": "128",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "160",
+          "Start Y": "160",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 4": {
+        "Start X": "128",
+        "Start Y": "192",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "160",
+          "Start Y": "192",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "160",
+          "Start Y": "224",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 5": {
+        "Start X": "128",
+        "Start Y": "256",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "160",
+          "Start Y": "256",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "160",
+          "Start Y": "288",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      }
+    }
+  },
+  {
+    "Leg Right": {
+      "Start X": "128",
+      "Start Y": "320",
+      "Width": "64",
+      "Height": "320",
+      "Color": "",
+      "Color 1": {
+        "Start X": "128",
+        "Start Y": "320",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "160",
+          "Start Y": "320",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "160",
+          "Start Y": "352",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 2": {
+        "Start X": "128",
+        "Start Y": "384",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "160",
+          "Start Y": "384",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "160",
+          "Start Y": "416",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 3": {
+        "Start X": "128",
+        "Start Y": "448",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "160",
+          "Start Y": "448",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "160",
+          "Start Y": "480",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 4": {
+        "Start X": "128",
+        "Start Y": "512",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "160",
+          "Start Y": "512",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "160",
+          "Start Y": "544",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 5": {
+        "Start X": "128",
+        "Start Y": "576",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "160",
+          "Start Y": "576",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "160",
+          "Start Y": "608",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      }
+    }
+  },
+  {
+    "Ear Right": {
+      "Start X": "128",
+      "Start Y": "640",
+      "Width": "64",
+      "Height": "64",
+      "Color": ""
+    }
+  },
+  {
+    "Eyelid Left": {
+      "Start X": "128",
+      "Start Y": "704",
+      "Width": "64",
+      "Height": "64",
+      "Color": ""
+    }
+  },
+  {
+    "Fingernail Right": {
+      "Start X": "128",
+      "Start Y": "768",
+      "Width": "64",
+      "Height": "64",
+      "Color": ""
+    }
+  },
+  {
+    "Toenail Right": {
+      "Start X": "128",
+      "Start Y": "832",
+      "Width": "64",
+      "Height": "64",
+      "Color": ""
+    }
+  },
+  {
+    "Mouth": {
+      "Start X": "128",
+      "Start Y": "896",
+      "Width": "64",
+      "Height": "64",
+      "Color": ""
+    }
+  },
+  {
+    "Hand Attire Left": {
+      "Start X": "192",
+      "Start Y": "0",
+      "Width": "64",
+      "Height": "320",
+      "Color": "",
+      "Color 1": {
+        "Start X": "192",
+        "Start Y": "0",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "224",
+          "Start Y": "0",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "224",
+          "Start Y": "32",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 2": {
+        "Start X": "192",
+        "Start Y": "64",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "224",
+          "Start Y": "64",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "224",
+          "Start Y": "96",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 3": {
+        "Start X": "192",
+        "Start Y": "128",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "224",
+          "Start Y": "128",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "224",
+          "Start Y": "160",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 4": {
+        "Start X": "192",
+        "Start Y": "192",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "224",
+          "Start Y": "192",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "224",
+          "Start Y": "224",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 5": {
+        "Start X": "192",
+        "Start Y": "256",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "224",
+          "Start Y": "256",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "224",
+          "Start Y": "288",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      }
+    }
+  },
+  {
+    "Foot Left": {
+      "Start X": "192",
+      "Start Y": "320",
+      "Width": "64",
+      "Height": "320",
+      "Color": "",
+      "Color 1": {
+        "Start X": "192",
+        "Start Y": "320",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "224",
+          "Start Y": "320",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "224",
+          "Start Y": "352",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 2": {
+        "Start X": "192",
+        "Start Y": "384",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "224",
+          "Start Y": "384",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "224",
+          "Start Y": "416",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 3": {
+        "Start X": "192",
+        "Start Y": "448",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "224",
+          "Start Y": "448",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "224",
+          "Start Y": "480",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 4": {
+        "Start X": "192",
+        "Start Y": "512",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "224",
+          "Start Y": "512",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "224",
+          "Start Y": "544",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 5": {
+        "Start X": "192",
+        "Start Y": "576",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "224",
+          "Start Y": "576",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "224",
+          "Start Y": "608",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      }
+    }
+  },
+  {
+    "Teeth": {
+      "Start X": "192",
+      "Start Y": "640",
+      "Width": "64",
+      "Height": "128",
+      "Color": "",
+      "Color 1": {
+        "Start X": "192",
+        "Start Y": "640",
+        "Width": "64",
+        "Height": "64",
+        "Color": ""
+      },
+      "Color 2": {
+        "Start X": "192",
+        "Start Y": "704",
+        "Width": "64",
+        "Height": "64",
+        "Color": ""
+      }
+    }
+  },
+  {
+    "Gums": {
+      "Start X": "192",
+      "Start Y": "768",
+      "Width": "64",
+      "Height": "64",
+      "Color": ""
+    }
+  },
+  {
+    "Teeth Accessory": {
+      "Start X": "192",
+      "Start Y": "832",
+      "Width": "64",
+      "Height": "64",
+      "Color": ""
+    }
+  },
+  {
+    "Tongue": {
+      "Start X": "192",
+      "Start Y": "896",
+      "Width": "64",
+      "Height": "64",
+      "Color": ""
+    }
+  },
+  {
+    "Hand Attire Right": {
+      "Start X": "256",
+      "Start Y": "0",
+      "Width": "64",
+      "Height": "320",
+      "Color": "",
+      "Color 1": {
+        "Start X": "256",
+        "Start Y": "0",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "288",
+          "Start Y": "0",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "288",
+          "Start Y": "32",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 2": {
+        "Start X": "256",
+        "Start Y": "64",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "288",
+          "Start Y": "64",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "288",
+          "Start Y": "96",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 3": {
+        "Start X": "256",
+        "Start Y": "128",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "288",
+          "Start Y": "128",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "288",
+          "Start Y": "160",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 4": {
+        "Start X": "256",
+        "Start Y": "192",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "288",
+          "Start Y": "192",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "288",
+          "Start Y": "224",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 5": {
+        "Start X": "256",
+        "Start Y": "256",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "288",
+          "Start Y": "256",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "288",
+          "Start Y": "288",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      }
+    }
+  },
+  {
+    "Foot Right": {
+      "Start X": "256",
+      "Start Y": "320",
+      "Width": "64",
+      "Height": "320",
+      "Color": "",
+      "Color 1": {
+        "Start X": "256",
+        "Start Y": "320",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "288",
+          "Start Y": "320",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "288",
+          "Start Y": "352",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 2": {
+        "Start X": "256",
+        "Start Y": "384",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "288",
+          "Start Y": "384",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "288",
+          "Start Y": "416",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 3": {
+        "Start X": "256",
+        "Start Y": "448",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "288",
+          "Start Y": "448",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "288",
+          "Start Y": "480",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 4": {
+        "Start X": "256",
+        "Start Y": "512",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "288",
+          "Start Y": "512",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "288",
+          "Start Y": "544",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 5": {
+        "Start X": "256",
+        "Start Y": "576",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "288",
+          "Start Y": "576",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "288",
+          "Start Y": "608",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      }
+    }
+  },
+  {
+    "EyeOut Left": {
+      "Start X": "256",
+      "Start Y": "640",
+      "Width": "64",
+      "Height": "64",
+      "Color": ""
+    }
+  },
+  {
+    "EyeEdge Left": {
+      "Start X": "256",
+      "Start Y": "704",
+      "Width": "64",
+      "Height": "64",
+      "Color": ""
+    }
+  },
+  {
+    "EyeInner Left": {
+      "Start X": "256",
+      "Start Y": "768",
+      "Width": "64",
+      "Height": "64",
+      "Color": ""
+    }
+  },
+  {
+    "EyeColor Left": {
+      "Start X": "256",
+      "Start Y": "832",
+      "Width": "64",
+      "Height": "64",
+      "Color": "#0066FF"
+    }
+  },
+  {
+    "EyeHighlight Left": {
+      "Start X": "256",
+      "Start Y": "896",
+      "Width": "64",
+      "Height": "64",
+      "Color": ""
+    }
+  },
+  {
+    "Shoulder Attire Left": {
+      "Start X": "320",
+      "Start Y": "0",
+      "Width": "64",
+      "Height": "320",
+      "Color": "",
+      "Color 1": {
+        "Start X": "320",
+        "Start Y": "0",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "352",
+          "Start Y": "0",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "352",
+          "Start Y": "32",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 2": {
+        "Start X": "320",
+        "Start Y": "64",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "352",
+          "Start Y": "64",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "352",
+          "Start Y": "96",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 3": {
+        "Start X": "320",
+        "Start Y": "128",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "352",
+          "Start Y": "128",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "352",
+          "Start Y": "160",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 4": {
+        "Start X": "320",
+        "Start Y": "192",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "352",
+          "Start Y": "192",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "352",
+          "Start Y": "224",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 5": {
+        "Start X": "320",
+        "Start Y": "256",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "352",
+          "Start Y": "256",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "352",
+          "Start Y": "288",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      }
+    }
+  },
+  {
+    "Head Attachment": {
+      "Start X": "320",
+      "Start Y": "320",
+      "Width": "64",
+      "Height": "320",
+      "Color": "",
+      "Color 1": {
+        "Start X": "320",
+        "Start Y": "320",
+        "Width": "32",
+        "Height": "64",
+        "Color": "#4A2511",
+        "Shade": {
+          "Start X": "352",
+          "Start Y": "320",
+          "Width": "32",
+          "Height": "32",
+          "Color": "#2A1508"
+        },
+        "Highlight": {
+          "Start X": "352",
+          "Start Y": "352",
+          "Width": "32",
+          "Height": "32",
+          "Color": "#6A3520"
+        }
+      },
+      "Color 2": {
+        "Start X": "320",
+        "Start Y": "384",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "352",
+          "Start Y": "384",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "352",
+          "Start Y": "416",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 3": {
+        "Start X": "320",
+        "Start Y": "448",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "352",
+          "Start Y": "448",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "352",
+          "Start Y": "480",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 4": {
+        "Start X": "320",
+        "Start Y": "512",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "352",
+          "Start Y": "512",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "352",
+          "Start Y": "544",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 5": {
+        "Start X": "320",
+        "Start Y": "576",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "352",
+          "Start Y": "576",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "352",
+          "Start Y": "608",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      }
+    }
+  },
+  {
+    "EyeOut Right": {
+      "Start X": "320",
+      "Start Y": "640",
+      "Width": "64",
+      "Height": "64",
+      "Color": ""
+    }
+  },
+  {
+    "EyeEdge Right": {
+      "Start X": "320",
+      "Start Y": "704",
+      "Width": "64",
+      "Height": "64",
+      "Color": ""
+    }
+  },
+  {
+    "EyeInner Right": {
+      "Start X": "320",
+      "Start Y": "768",
+      "Width": "64",
+      "Height": "64",
+      "Color": ""
+    }
+  },
+  {
+    "EyeColor Right": {
+      "Start X": "320",
+      "Start Y": "832",
+      "Width": "64",
+      "Height": "64",
+      "Color": "#0066FF"
+    }
+  },
+  {
+    "EyeHighlight Right": {
+      "Start X": "320",
+      "Start Y": "896",
+      "Width": "64",
+      "Height": "64",
+      "Color": ""
+    }
+  },
+  {
+    "Shoulder Attire Right": {
+      "Start X": "384",
+      "Start Y": "0",
+      "Width": "64",
+      "Height": "320",
+      "Color": "",
+      "Color 1": {
+        "Start X": "384",
+        "Start Y": "0",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "416",
+          "Start Y": "0",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "416",
+          "Start Y": "32",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 2": {
+        "Start X": "384",
+        "Start Y": "64",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "416",
+          "Start Y": "64",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "416",
+          "Start Y": "96",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 3": {
+        "Start X": "384",
+        "Start Y": "128",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "416",
+          "Start Y": "128",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "416",
+          "Start Y": "160",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 4": {
+        "Start X": "384",
+        "Start Y": "192",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "416",
+          "Start Y": "192",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "416",
+          "Start Y": "224",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 5": {
+        "Start X": "384",
+        "Start Y": "256",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "416",
+          "Start Y": "256",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "416",
+          "Start Y": "288",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      }
+    }
+  },
+  {
+    "Face Attachment": {
+      "Start X": "384",
+      "Start Y": "320",
+      "Width": "64",
+      "Height": "320",
+      "Color": "",
+      "Color 1": {
+        "Start X": "384",
+        "Start Y": "320",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "416",
+          "Start Y": "320",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "416",
+          "Start Y": "352",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 2": {
+        "Start X": "384",
+        "Start Y": "384",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "416",
+          "Start Y": "384",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "416",
+          "Start Y": "416",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 3": {
+        "Start X": "384",
+        "Start Y": "448",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "416",
+          "Start Y": "448",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "416",
+          "Start Y": "480",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 4": {
+        "Start X": "384",
+        "Start Y": "512",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "416",
+          "Start Y": "512",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "416",
+          "Start Y": "544",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 5": {
+        "Start X": "384",
+        "Start Y": "576",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "416",
+          "Start Y": "576",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "416",
+          "Start Y": "608",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      }
+    }
+  },
+  {
+    "Brow Left": {
+      "Start X": "384",
+      "Start Y": "640",
+      "Width": "64",
+      "Height": "64",
+      "Color": ""
+    }
+  },
+  {
+    "Hair": {
+      "Start X": "384",
+      "Start Y": "704",
+      "Width": "64",
+      "Height": "128",
+      "Color": "",
+      "Color 1": {
+        "Start X": "384",
+        "Start Y": "704",
+        "Width": "64",
+        "Height": "64",
+        "Color": ""
+      },
+      "Color 2": {
+        "Start X": "384",
+        "Start Y": "768",
+        "Width": "64",
+        "Height": "64",
+        "Color": ""
+      }
+    }
+  },
+  {
+    "Hair Stubble": {
+      "Start X": "384",
+      "Start Y": "832",
+      "Width": "64",
+      "Height": "64",
+      "Color": ""
+    }
+  },
+  {
+    "Hair Accessory": {
+      "Start X": "384",
+      "Start Y": "896",
+      "Width": "64",
+      "Height": "64",
+      "Color": ""
+    }
+  },
+  {
+    "Elbow Attire Left": {
+      "Start X": "448",
+      "Start Y": "0",
+      "Width": "64",
+      "Height": "320",
+      "Color": "",
+      "Color 1": {
+        "Start X": "448",
+        "Start Y": "0",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "480",
+          "Start Y": "0",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "480",
+          "Start Y": "32",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 2": {
+        "Start X": "448",
+        "Start Y": "64",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "480",
+          "Start Y": "64",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "480",
+          "Start Y": "96",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 3": {
+        "Start X": "448",
+        "Start Y": "128",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "480",
+          "Start Y": "128",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "480",
+          "Start Y": "160",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 4": {
+        "Start X": "448",
+        "Start Y": "192",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "480",
+          "Start Y": "192",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "480",
+          "Start Y": "224",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 5": {
+        "Start X": "448",
+        "Start Y": "256",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "480",
+          "Start Y": "256",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "480",
+          "Start Y": "288",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      }
+    }
+  },
+  {
+    "Back Attachment": {
+      "Start X": "448",
+      "Start Y": "320",
+      "Width": "64",
+      "Height": "320",
+      "Color": "",
+      "Color 1": {
+        "Start X": "448",
+        "Start Y": "320",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "480",
+          "Start Y": "320",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "480",
+          "Start Y": "352",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 2": {
+        "Start X": "448",
+        "Start Y": "384",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "480",
+          "Start Y": "384",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "480",
+          "Start Y": "416",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 3": {
+        "Start X": "448",
+        "Start Y": "448",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "480",
+          "Start Y": "448",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "480",
+          "Start Y": "480",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 4": {
+        "Start X": "448",
+        "Start Y": "512",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "480",
+          "Start Y": "512",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "480",
+          "Start Y": "544",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 5": {
+        "Start X": "448",
+        "Start Y": "576",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "480",
+          "Start Y": "576",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "480",
+          "Start Y": "608",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      }
+    }
+  },
+  {
+    "Brow Right": {
+      "Start X": "448",
+      "Start Y": "640",
+      "Width": "64",
+      "Height": "64",
+      "Color": ""
+    }
+  },
+  {
+    "Facial Hair": {
+      "Start X": "448",
+      "Start Y": "704",
+      "Width": "64",
+      "Height": "128",
+      "Color": "",
+      "Color 1": {
+        "Start X": "448",
+        "Start Y": "704",
+        "Width": "64",
+        "Height": "64",
+        "Color": ""
+      },
+      "Color 2": {
+        "Start X": "448",
+        "Start Y": "768",
+        "Width": "64",
+        "Height": "64",
+        "Color": ""
+      }
+    }
+  },
+  {
+    "Facial Hair Stubble": {
+      "Start X": "448",
+      "Start Y": "832",
+      "Width": "64",
+      "Height": "64",
+      "Color": ""
+    }
+  },
+  {
+    "Facial Hair Accessory": {
+      "Start X": "448",
+      "Start Y": "896",
+      "Width": "64",
+      "Height": "64",
+      "Color": ""
+    }
+  },
+  {
+    "Elbow Attire Right": {
+      "Start X": "512",
+      "Start Y": "0",
+      "Width": "64",
+      "Height": "320",
+      "Color": "",
+      "Color 1": {
+        "Start X": "512",
+        "Start Y": "0",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "544",
+          "Start Y": "0",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "544",
+          "Start Y": "32",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 2": {
+        "Start X": "512",
+        "Start Y": "64",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "544",
+          "Start Y": "64",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "544",
+          "Start Y": "96",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 3": {
+        "Start X": "512",
+        "Start Y": "128",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "544",
+          "Start Y": "128",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "544",
+          "Start Y": "160",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 4": {
+        "Start X": "512",
+        "Start Y": "192",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "544",
+          "Start Y": "192",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "544",
+          "Start Y": "224",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 5": {
+        "Start X": "512",
+        "Start Y": "256",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "544",
+          "Start Y": "256",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "544",
+          "Start Y": "288",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      }
+    }
+  },
+  {
+    "Metals": {
+      "Start X": "512",
+      "Start Y": "320",
+      "Width": "64",
+      "Height": "256",
+      "Color": "",
+      "Color 1": {
+        "Start X": "512",
+        "Start Y": "320",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "544",
+          "Start Y": "320",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "544",
+          "Start Y": "352",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 2": {
+        "Start X": "512",
+        "Start Y": "384",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "544",
+          "Start Y": "384",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "512",
+          "Start Y": "448",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 3": {
+        "Start X": "512",
+        "Start Y": "448",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "544",
+          "Start Y": "448",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "544",
+          "Start Y": "480",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 4": {
+        "Start X": "512",
+        "Start Y": "512",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "544",
+          "Start Y": "512",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "544",
+          "Start Y": "544",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      }
+    }
+  },
+  {
+    "Jewelry Metal": {
+      "Start X": "512",
+      "Start Y": "576",
+      "Width": "64",
+      "Height": "128",
+      "Color": "",
+      "Color 1": {
+        "Start X": "512",
+        "Start Y": "576",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "544",
+          "Start Y": "576",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "544",
+          "Start Y": "608",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 2": {
+        "Start X": "512",
+        "Start Y": "640",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "544",
+          "Start Y": "640",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "512",
+          "Start Y": "704",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      }
+    }
+  },
+  {
+    "Glass": {
+      "Start X": "512",
+      "Start Y": "704",
+      "Width": "64",
+      "Height": "128",
+      "Color": "",
+      "Color 1": {
+        "Start X": "512",
+        "Start Y": "704",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "544",
+          "Start Y": "704",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "544",
+          "Start Y": "736",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 2": {
+        "Start X": "512",
+        "Start Y": "768",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "544",
+          "Start Y": "768",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "512",
+          "Start Y": "832",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      }
+    }
+  },
+  {
+    "Glow": {
+      "Start X": "512",
+      "Start Y": "832",
+      "Width": "64",
+      "Height": "128",
+      "Color": "",
+      "Color 1": {
+        "Start X": "512",
+        "Start Y": "832",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Tint": {
+          "Start X": "544",
+          "Start Y": "832",
+          "Width": "32",
+          "Height": "64",
+          "Color": ""
+        }
+      },
+      "Color 2": {
+        "Start X": "512",
+        "Start Y": "896",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Tint": {
+          "Start X": "544",
+          "Start Y": "896",
+          "Width": "32",
+          "Height": "64",
+          "Color": ""
+        }
+      }
+    }
+  },
+  {
+    "Knee Attire Left": {
+      "Start X": "576",
+      "Start Y": "0",
+      "Width": "64",
+      "Height": "320",
+      "Color": "",
+      "Color 1": {
+        "Start X": "576",
+        "Start Y": "0",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "608",
+          "Start Y": "0",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "608",
+          "Start Y": "32",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 2": {
+        "Start X": "576",
+        "Start Y": "64",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "608",
+          "Start Y": "64",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "576",
+          "Start Y": "128",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 3": {
+        "Start X": "576",
+        "Start Y": "128",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "608",
+          "Start Y": "128",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "608",
+          "Start Y": "160",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 4": {
+        "Start X": "576",
+        "Start Y": "192",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "608",
+          "Start Y": "192",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "608",
+          "Start Y": "224",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 5": {
+        "Start X": "576",
+        "Start Y": "256",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "608",
+          "Start Y": "256",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "608",
+          "Start Y": "288",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      }
+    }
+  },
+  {
+    "Transparent": {
+      "Start X": "576",
+      "Start Y": "320",
+      "Width": "64",
+      "Height": "128",
+      "Color": "",
+      "Color 1": {
+        "Start X": "576",
+        "Start Y": "320",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "608",
+          "Start Y": "320",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "608",
+          "Start Y": "352",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 2": {
+        "Start X": "576",
+        "Start Y": "384",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "608",
+          "Start Y": "384",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "576",
+          "Start Y": "448",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      }
+    }
+  },
+  {
+    "Digital Screen": {
+      "Start X": "576",
+      "Start Y": "448",
+      "Width": "64",
+      "Height": "128",
+      "Color": "",
+      "Color 1": {
+        "Start X": "576",
+        "Start Y": "448",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "608",
+          "Start Y": "448",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "608",
+          "Start Y": "480",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 2": {
+        "Start X": "576",
+        "Start Y": "512",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "608",
+          "Start Y": "512",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "576",
+          "Start Y": "576",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      }
+    }
+  },
+  {
+    "Rubber": {
+      "Start X": "576",
+      "Start Y": "576",
+      "Width": "64",
+      "Height": "128",
+      "Color": "",
+      "Color 1": {
+        "Start X": "576",
+        "Start Y": "576",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "608",
+          "Start Y": "576",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "608",
+          "Start Y": "608",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 2": {
+        "Start X": "576",
+        "Start Y": "640",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "608",
+          "Start Y": "640",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "576",
+          "Start Y": "704",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      }
+    }
+  },
+  {
+    "Plastic": {
+      "Start X": "576",
+      "Start Y": "704",
+      "Width": "64",
+      "Height": "128",
+      "Color": "",
+      "Color 1": {
+        "Start X": "576",
+        "Start Y": "704",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "608",
+          "Start Y": "704",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "608",
+          "Start Y": "736",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 2": {
+        "Start X": "576",
+        "Start Y": "768",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "608",
+          "Start Y": "768",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "576",
+          "Start Y": "832",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      }
+    }
+  },
+  {
+    "Bone": {
+      "Start X": "576",
+      "Start Y": "832",
+      "Width": "64",
+      "Height": "128",
+      "Color": "",
+      "Color 1": {
+        "Start X": "576",
+        "Start Y": "832",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "608",
+          "Start Y": "832",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "608",
+          "Start Y": "864",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 2": {
+        "Start X": "576",
+        "Start Y": "896",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "608",
+          "Start Y": "896",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "576",
+          "Start Y": "960",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      }
+    }
+  },
+  {
+    "Knee Attire Right": {
+      "Start X": "640",
+      "Start Y": "0",
+      "Width": "64",
+      "Height": "320",
+      "Color": "",
+      "Color 1": {
+        "Start X": "640",
+        "Start Y": "0",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "672",
+          "Start Y": "0",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "672",
+          "Start Y": "32",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 2": {
+        "Start X": "640",
+        "Start Y": "64",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "672",
+          "Start Y": "64",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "672",
+          "Start Y": "96",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 3": {
+        "Start X": "640",
+        "Start Y": "128",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "672",
+          "Start Y": "128",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "672",
+          "Start Y": "160",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 4": {
+        "Start X": "640",
+        "Start Y": "192",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "672",
+          "Start Y": "192",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "672",
+          "Start Y": "224",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 5": {
+        "Start X": "640",
+        "Start Y": "256",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "672",
+          "Start Y": "256",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "672",
+          "Start Y": "288",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      }
+    }
+  },
+  {
+    "Fur": {
+      "Start X": "640",
+      "Start Y": "320",
+      "Width": "64",
+      "Height": "128",
+      "Color": "",
+      "Color 1": {
+        "Start X": "640",
+        "Start Y": "320",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "672",
+          "Start Y": "320",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "672",
+          "Start Y": "352",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 2": {
+        "Start X": "640",
+        "Start Y": "384",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "672",
+          "Start Y": "384",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "672",
+          "Start Y": "416",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      }
+    }
+  },
+  {
+    "Rope": {
+      "Start X": "640",
+      "Start Y": "448",
+      "Width": "64",
+      "Height": "128",
+      "Color": "",
+      "Color 1": {
+        "Start X": "640",
+        "Start Y": "448",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "672",
+          "Start Y": "448",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "672",
+          "Start Y": "480",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 2": {
+        "Start X": "640",
+        "Start Y": "512",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "672",
+          "Start Y": "512",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "672",
+          "Start Y": "544",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      }
+    }
+  },
+  {
+    "Strap": {
+      "Start X": "640",
+      "Start Y": "576",
+      "Width": "64",
+      "Height": "128",
+      "Color": "",
+      "Color 1": {
+        "Start X": "640",
+        "Start Y": "576",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "672",
+          "Start Y": "576",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "672",
+          "Start Y": "608",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 2": {
+        "Start X": "640",
+        "Start Y": "640",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "672",
+          "Start Y": "640",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "672",
+          "Start Y": "672",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      }
+    }
+  },
+  {
+    "Stitch": {
+      "Start X": "640",
+      "Start Y": "704",
+      "Width": "64",
+      "Height": "128",
+      "Color": "",
+      "Color 1": {
+        "Start X": "640",
+        "Start Y": "704",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "672",
+          "Start Y": "704",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "672",
+          "Start Y": "736",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 2": {
+        "Start X": "640",
+        "Start Y": "768",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "672",
+          "Start Y": "768",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "672",
+          "Start Y": "800",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      }
+    }
+  },
+  {
+    "Bandage": {
+      "Start X": "640",
+      "Start Y": "832",
+      "Width": "64",
+      "Height": "128",
+      "Color": "",
+      "Color 1": {
+        "Start X": "640",
+        "Start Y": "832",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "672",
+          "Start Y": "832",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "672",
+          "Start Y": "864",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 2": {
+        "Start X": "640",
+        "Start Y": "896",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "672",
+          "Start Y": "896",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "672",
+          "Start Y": "928",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      }
+    }
+  },
+  {
+    "Hip Front Attachment": {
+      "Start X": "704",
+      "Start Y": "0",
+      "Width": "64",
+      "Height": "320",
+      "Color": "",
+      "Color 1": {
+        "Start X": "704",
+        "Start Y": "0",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "736",
+          "Start Y": "0",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "736",
+          "Start Y": "32",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 2": {
+        "Start X": "704",
+        "Start Y": "64",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "736",
+          "Start Y": "64",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "736",
+          "Start Y": "96",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 3": {
+        "Start X": "704",
+        "Start Y": "128",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "736",
+          "Start Y": "128",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "736",
+          "Start Y": "160",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 4": {
+        "Start X": "704",
+        "Start Y": "192",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "736",
+          "Start Y": "192",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "736",
+          "Start Y": "224",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 5": {
+        "Start X": "704",
+        "Start Y": "256",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "736",
+          "Start Y": "256",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "736",
+          "Start Y": "288",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      }
+    }
+  },
+  {
+    "Paper": {
+      "Start X": "704",
+      "Start Y": "320",
+      "Width": "64",
+      "Height": "128",
+      "Color": "",
+      "Color 1": {
+        "Start X": "704",
+        "Start Y": "320",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "736",
+          "Start Y": "320",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "736",
+          "Start Y": "352",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 2": {
+        "Start X": "704",
+        "Start Y": "384",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "736",
+          "Start Y": "384",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "736",
+          "Start Y": "416",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      }
+    }
+  },
+  {
+    "Wood": {
+      "Start X": "704",
+      "Start Y": "448",
+      "Width": "64",
+      "Height": "128",
+      "Color": "",
+      "Color 1": {
+        "Start X": "704",
+        "Start Y": "448",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "736",
+          "Start Y": "448",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "736",
+          "Start Y": "480",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 2": {
+        "Start X": "704",
+        "Start Y": "512",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "736",
+          "Start Y": "512",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "736",
+          "Start Y": "544",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      }
+    }
+  },
+  {
+    "Horns": {
+      "Start X": "704",
+      "Start Y": "576",
+      "Width": "64",
+      "Height": "128",
+      "Color": "",
+      "Color 1": {
+        "Start X": "704",
+        "Start Y": "576",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "736",
+          "Start Y": "576",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "736",
+          "Start Y": "608",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 2": {
+        "Start X": "704",
+        "Start Y": "640",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "736",
+          "Start Y": "640",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "736",
+          "Start Y": "672",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      }
+    }
+  },
+  {
+    "Feathers": {
+      "Start X": "704",
+      "Start Y": "704",
+      "Width": "64",
+      "Height": "128",
+      "Color": "",
+      "Color 1": {
+        "Start X": "704",
+        "Start Y": "704",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "736",
+          "Start Y": "704",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "736",
+          "Start Y": "736",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 2": {
+        "Start X": "704",
+        "Start Y": "768",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "736",
+          "Start Y": "768",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "736",
+          "Start Y": "800",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      }
+    }
+  },
+  {
+    "Jewelry Gem": {
+      "Start X": "704",
+      "Start Y": "832",
+      "Width": "64",
+      "Height": "128",
+      "Color": "",
+      "Color 1": {
+        "Start X": "704",
+        "Start Y": "832",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "736",
+          "Start Y": "832",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "736",
+          "Start Y": "864",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 2": {
+        "Start X": "704",
+        "Start Y": "896",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "736",
+          "Start Y": "896",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "736",
+          "Start Y": "928",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      }
+    }
+  },
+  {
+    "Hip Left Attachment": {
+      "Start X": "768",
+      "Start Y": "0",
+      "Width": "64",
+      "Height": "320",
+      "Color": "",
+      "Color 1": {
+        "Start X": "768",
+        "Start Y": "0",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "800",
+          "Start Y": "0",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "800",
+          "Start Y": "32",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 2": {
+        "Start X": "768",
+        "Start Y": "64",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "800",
+          "Start Y": "64",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "800",
+          "Start Y": "96",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 3": {
+        "Start X": "768",
+        "Start Y": "128",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "800",
+          "Start Y": "128",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "800",
+          "Start Y": "160",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 4": {
+        "Start X": "768",
+        "Start Y": "192",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "800",
+          "Start Y": "192",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "800",
+          "Start Y": "224",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 5": {
+        "Start X": "768",
+        "Start Y": "256",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "800",
+          "Start Y": "256",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "800",
+          "Start Y": "288",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      }
+    }
+  },
+  {
+    "Flesh": {
+      "Start X": "768",
+      "Start Y": "320",
+      "Width": "64",
+      "Height": "128",
+      "Color": "",
+      "Color 1": {
+        "Start X": "768",
+        "Start Y": "320",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "800",
+          "Start Y": "320",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "800",
+          "Start Y": "352",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 2": {
+        "Start X": "768",
+        "Start Y": "384",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "800",
+          "Start Y": "384",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "800",
+          "Start Y": "416",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      }
+    }
+  },
+  {
+    "Concrete": {
+      "Start X": "768",
+      "Start Y": "448",
+      "Width": "64",
+      "Height": "128",
+      "Color": "",
+      "Color 1": {
+        "Start X": "768",
+        "Start Y": "448",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "800",
+          "Start Y": "448",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "800",
+          "Start Y": "480",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 2": {
+        "Start X": "768",
+        "Start Y": "512",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "800",
+          "Start Y": "512",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "800",
+          "Start Y": "544",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      }
+    }
+  },
+  {
+    "Hip Right Attachment": {
+      "Start X": "832",
+      "Start Y": "0",
+      "Width": "64",
+      "Height": "320",
+      "Color": "",
+      "Color 1": {
+        "Start X": "832",
+        "Start Y": "0",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "864",
+          "Start Y": "0",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "864",
+          "Start Y": "32",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 2": {
+        "Start X": "832",
+        "Start Y": "64",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "864",
+          "Start Y": "64",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "864",
+          "Start Y": "96",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 3": {
+        "Start X": "832",
+        "Start Y": "128",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "864",
+          "Start Y": "128",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "864",
+          "Start Y": "160",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 4": {
+        "Start X": "832",
+        "Start Y": "192",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "864",
+          "Start Y": "192",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "864",
+          "Start Y": "224",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 5": {
+        "Start X": "832",
+        "Start Y": "256",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "864",
+          "Start Y": "256",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "864",
+          "Start Y": "288",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      }
+    }
+  },
+  {
+    "Hip Back Attachment": {
+      "Start X": "896",
+      "Start Y": "0",
+      "Width": "64",
+      "Height": "320",
+      "Color": "",
+      "Color 1": {
+        "Start X": "896",
+        "Start Y": "0",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "928",
+          "Start Y": "0",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "928",
+          "Start Y": "32",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 2": {
+        "Start X": "896",
+        "Start Y": "64",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "928",
+          "Start Y": "64",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "928",
+          "Start Y": "96",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 3": {
+        "Start X": "896",
+        "Start Y": "128",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "928",
+          "Start Y": "128",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "928",
+          "Start Y": "160",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 4": {
+        "Start X": "896",
+        "Start Y": "192",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "928",
+          "Start Y": "192",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "928",
+          "Start Y": "224",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 5": {
+        "Start X": "896",
+        "Start Y": "256",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "928",
+          "Start Y": "256",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "928",
+          "Start Y": "288",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      }
+    }
+  },
+  {
+    "Fire": {
+      "Start X": "896",
+      "Start Y": "320",
+      "Width": "64",
+      "Height": "128",
+      "Color": "",
+      "Color 1": {
+        "Start X": "896",
+        "Start Y": "320",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "928",
+          "Start Y": "320",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "928",
+          "Start Y": "352",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 2": {
+        "Start X": "896",
+        "Start Y": "384",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "928",
+          "Start Y": "384",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "928",
+          "Start Y": "416",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      }
+    }
+  },
+  {
+    "Lava": {
+      "Start X": "896",
+      "Start Y": "448",
+      "Width": "64",
+      "Height": "128",
+      "Color": "",
+      "Color 1": {
+        "Start X": "896",
+        "Start Y": "448",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "928",
+          "Start Y": "448",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "928",
+          "Start Y": "480",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 2": {
+        "Start X": "896",
+        "Start Y": "512",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "928",
+          "Start Y": "512",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "928",
+          "Start Y": "544",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      }
+    }
+  },
+  {
+    "Vegetation": {
+      "Start X": "896",
+      "Start Y": "576",
+      "Width": "64",
+      "Height": "128",
+      "Color": "",
+      "Color 1": {
+        "Start X": "896",
+        "Start Y": "576",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "928",
+          "Start Y": "576",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "928",
+          "Start Y": "608",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 2": {
+        "Start X": "896",
+        "Start Y": "640",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "928",
+          "Start Y": "640",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "928",
+          "Start Y": "672",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      }
+    }
+  },
+  {
+    "Water": {
+      "Start X": "896",
+      "Start Y": "704",
+      "Width": "64",
+      "Height": "128",
+      "Color": "",
+      "Color 1": {
+        "Start X": "896",
+        "Start Y": "704",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "928",
+          "Start Y": "704",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "928",
+          "Start Y": "736",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 2": {
+        "Start X": "896",
+        "Start Y": "768",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "928",
+          "Start Y": "768",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "928",
+          "Start Y": "800",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      }
+    }
+  },
+  {
+    "Ice": {
+      "Start X": "896",
+      "Start Y": "832",
+      "Width": "64",
+      "Height": "128",
+      "Color": "",
+      "Color 1": {
+        "Start X": "896",
+        "Start Y": "832",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "928",
+          "Start Y": "832",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "928",
+          "Start Y": "864",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 2": {
+        "Start X": "896",
+        "Start Y": "896",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "928",
+          "Start Y": "896",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "928",
+          "Start Y": "928",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      }
+    }
+  },
+  {
+    "Reference Palette": {
+      "Start X": "960",
+      "Start Y": "0",
+      "Width": "64",
+      "Height": "960",
+      "Color": "",
+      "Color 1": {
+        "Start X": "960",
+        "Start Y": "0",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "992",
+          "Start Y": "0",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "992",
+          "Start Y": "32",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 2": {
+        "Start X": "960",
+        "Start Y": "64",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "992",
+          "Start Y": "64",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "992",
+          "Start Y": "96",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 3": {
+        "Start X": "960",
+        "Start Y": "128",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "992",
+          "Start Y": "128",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "992",
+          "Start Y": "160",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 4": {
+        "Start X": "960",
+        "Start Y": "192",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "992",
+          "Start Y": "192",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "992",
+          "Start Y": "224",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 5": {
+        "Start X": "960",
+        "Start Y": "256",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "992",
+          "Start Y": "256",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "992",
+          "Start Y": "288",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 6": {
+        "Start X": "960",
+        "Start Y": "320",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "992",
+          "Start Y": "320",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "992",
+          "Start Y": "352",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 7": {
+        "Start X": "960",
+        "Start Y": "384",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "992",
+          "Start Y": "384",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "992",
+          "Start Y": "416",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 8": {
+        "Start X": "960",
+        "Start Y": "448",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "992",
+          "Start Y": "448",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "992",
+          "Start Y": "480",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 9": {
+        "Start X": "960",
+        "Start Y": "512",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "992",
+          "Start Y": "512",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "992",
+          "Start Y": "544",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 10": {
+        "Start X": "960",
+        "Start Y": "576",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "992",
+          "Start Y": "576",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "992",
+          "Start Y": "608",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 11": {
+        "Start X": "960",
+        "Start Y": "640",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "992",
+          "Start Y": "640",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "992",
+          "Start Y": "672",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 12": {
+        "Start X": "960",
+        "Start Y": "704",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "992",
+          "Start Y": "704",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "992",
+          "Start Y": "736",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 13": {
+        "Start X": "960",
+        "Start Y": "768",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "992",
+          "Start Y": "768",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "992",
+          "Start Y": "800",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 14": {
+        "Start X": "960",
+        "Start Y": "832",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "992",
+          "Start Y": "832",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "992",
+          "Start Y": "864",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      },
+      "Color 15": {
+        "Start X": "960",
+        "Start Y": "896",
+        "Width": "32",
+        "Height": "64",
+        "Color": "",
+        "Shade": {
+          "Start X": "992",
+          "Start Y": "896",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        },
+        "Highlight": {
+          "Start X": "992",
+          "Start Y": "928",
+          "Width": "32",
+          "Height": "32",
+          "Color": ""
+        }
+      }
+    }
+  },
+  {
+    "Cuts": {
+      "Start X": "960",
+      "Start Y": "960",
+      "Width": "64",
+      "Height": "64",
+      "Color": ""
+    }
+  }
+]

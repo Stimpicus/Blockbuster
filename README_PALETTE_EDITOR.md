@@ -2,6 +2,26 @@
 
 A graphical user interface (GUI) application for editing character palette configuration files based on the `SaveCharacterPalette.json` template.
 
+## Quick Start
+
+### Windows
+1. Double-click `run_palette_editor.bat`
+2. The script will automatically set up Python dependencies and launch the editor
+
+### Linux/macOS
+1. Open a terminal in the project directory
+2. Run: `./run_palette_editor.sh`
+3. The script will automatically set up Python dependencies and launch the editor
+
+### Manual Launch
+```bash
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the application
+python palette_editor.py
+```
+
 ## Features
 
 - **Visual Color Editing**: Color picker widgets for each region/setting in the palette
