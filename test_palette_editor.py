@@ -109,9 +109,17 @@ def test_palette_editor():
     
     print(f"✓ Loaded {len(palette_data)} top-level entries\n")
     
+    # Validate expected count
+    if len(palette_data) != 86:
+        print(f"⚠ Warning: Expected 86 top-level entries, found {len(palette_data)}")
+    
     # Parse and display regions
     regions = parse_palette_regions(palette_data)
     print(f"✓ Parsed {len(regions)} color regions\n")
+    
+    # Validate expected count
+    if len(regions) != 645:
+        print(f"⚠ Warning: Expected 645 color regions, found {len(regions)}")
     
     # Show some example regions
     print("Sample regions:")

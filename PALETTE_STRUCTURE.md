@@ -150,8 +150,13 @@ Colors are stored as hexadecimal RGB values:
 ## Region Count
 
 The current palette structure contains:
-- **86** top-level regions
-- **645** total color regions (including all nested variants)
+- **86** top-level regions (validated by loading SaveCharacterPalette.json)
+- **645** total color regions including all nested variants (validated by test_palette_editor.py)
+
+You can verify these counts by running:
+```bash
+python test_palette_editor.py
+```
 
 ## Usage in Game Engine
 
@@ -177,15 +182,20 @@ A typical color setup for a character might be:
 
 ```json
 "Color 1": {
-  "Color": "#FF5733",      // Main color (orange-red)
+  "Color": "#FF5733",
   "Shade": {
-    "Color": "#CC4522"     // Darker shade
+    "Color": "#CC4522"
   },
   "Highlight": {
-    "Color": "#FF8855"     // Lighter highlight
+    "Color": "#FF8855"
   }
 }
 ```
+
+Color selection guide:
+- `#FF5733` - Main color (orange-red)
+- `#CC4522` - Darker shade for shadows
+- `#FF8855` - Lighter highlight for illumination
 
 This creates a nice gradient effect with the base color, darker shading, and lighter highlights.
 
