@@ -12,6 +12,7 @@ from PIL import Image, ImageTk
 import os
 from typing import Dict, Any, List, Tuple
 import colorsys
+from collections import Counter
 
 
 def calculate_shade(color_hex: str, factor: float = 0.6) -> str:
@@ -75,6 +76,7 @@ class ColorEntry:
         self.width = width
         self.height = height
         self.color = color if color else "#000000"
+        self.widgets = None  # Tuple of (button, entry) widgets
 
 
 class PaletteEditor:
@@ -108,6 +110,7 @@ class PaletteEditor:
         self.preview_photo = None
         self.group_frames = {}  # Maps group name -> frame widget
         self.group_expanded = {}  # Maps group name -> bool
+        self.group_color_widgets = {}  # Maps (group_name, color_id) -> (button, entry)
         
         self.setup_ui()
         
@@ -123,6 +126,8 @@ class PaletteEditor:
         file_menu.add_command(label="Open...", command=self.open_config)
         file_menu.add_command(label="Save", command=self.save_config)
         file_menu.add_command(label="Save As...", command=self.save_config_as)
+        file_menu.add_separator()
+        file_menu.add_command(label="Import Texture PNG...", command=self.import_texture)
         file_menu.add_separator()
         file_menu.add_command(label="Export PNG...", command=self.export_png)
         file_menu.add_separator()
@@ -315,6 +320,8 @@ class PaletteEditor:
             btn_frame.pack(side=tk.LEFT, padx=2)
             
             ttk.Label(btn_frame, text=f"C{i}:", font=('Arial', 8)).pack(side=tk.LEFT)
+            
+            # Color display button
             color_btn = tk.Button(
                 btn_frame,
                 bg="#000000",
@@ -323,7 +330,18 @@ class PaletteEditor:
                 command=lambda g=group_name, c=color_id: self.choose_group_color(g, c)
             )
             color_btn.pack(side=tk.LEFT)
-            color_btn.group_color_id = color_id
+            
+            # Hex input field for group color
+            hex_entry = ttk.Entry(btn_frame, width=8, font=('Arial', 8))
+            hex_entry.insert(0, "#000000")
+            hex_entry.pack(side=tk.LEFT, padx=2)
+            hex_entry.bind('<Return>', lambda e, g=group_name, c=color_id, ent=hex_entry, btn=color_btn: 
+                          self.update_group_color_from_entry(g, c, ent, btn))
+            hex_entry.bind('<FocusOut>', lambda e, g=group_name, c=color_id, ent=hex_entry, btn=color_btn: 
+                          self.update_group_color_from_entry(g, c, ent, btn))
+            
+            # Store references
+            self.group_color_widgets[(group_name, color_id)] = (color_btn, hex_entry)
         
         # Content frame (collapsed by default)
         content_frame = ttk.Frame(group_container)
@@ -358,33 +376,85 @@ class PaletteEditor:
             expand_var.set("▶")
             self.group_frames[group_name]['content_frame'].pack_forget()
     
+    def update_color_widgets(self, paths: List[str]):
+        """Update UI widgets for given paths"""
+        for path in paths:
+            if path in self.color_entries:
+                entry = self.color_entries[path]
+                if entry.widgets:
+                    btn, text_entry = entry.widgets
+                    try:
+                        btn.configure(bg=entry.color)
+                        text_entry.delete(0, tk.END)
+                        text_entry.insert(0, entry.color)
+                    except:
+                        pass  # Widget might not exist anymore
+    
     def choose_group_color(self, group_name: str, color_id: str):
         """Choose a color for all items in a group"""
         color = colorchooser.askcolor(title=f"Choose {color_id} for {group_name}")
         
         if color[1]:  # color[1] is the hex value
-            # Apply to all items in the group
-            if group_name == "Clothing":
-                item_names = self.CLOTHING_GROUP
-            elif group_name == "Attachments":
-                item_names = self.ATTACHMENTS_GROUP
-            else:
-                return
-            
-            # Apply the color to all matching items
-            for path, entry in self.color_entries.items():
-                # Check if this entry belongs to an item in the group and matches the color ID
-                for item_name in item_names:
-                    if item_name in path and color_id in path:
-                        entry.color = color[1]
-                        # Also auto-calculate shade and highlight
-                        if "Shade" in path:
-                            entry.color = calculate_shade(color[1])
-                        elif "Highlight" in path:
-                            entry.color = calculate_highlight(color[1])
-            
-            self.update_preview()
-            self.status_var.set(f"Applied {color_id} to all items in {group_name}")
+            self.apply_group_color(group_name, color_id, color[1])
+    
+    def apply_group_color(self, group_name: str, color_id: str, hex_color: str):
+        """Apply a color to all items in a group and update UI"""
+        # Get the item names for the group
+        if group_name == "Clothing":
+            item_names = self.CLOTHING_GROUP
+        elif group_name == "Attachments":
+            item_names = self.ATTACHMENTS_GROUP
+        else:
+            return
+        
+        # Update group-level color widget
+        if (group_name, color_id) in self.group_color_widgets:
+            btn, entry = self.group_color_widgets[(group_name, color_id)]
+            btn.configure(bg=hex_color)
+            entry.delete(0, tk.END)
+            entry.insert(0, hex_color)
+        
+        # Apply the color to all matching items
+        updated_widgets = []
+        for path, entry in self.color_entries.items():
+            # Check if this entry belongs to an item in the group and matches the color ID
+            for item_name in item_names:
+                if item_name in path and color_id in path:
+                    # Check if this is the base color (not Shade or Highlight)
+                    if not ("Shade" in path or "Highlight" in path):
+                        entry.color = hex_color
+                        updated_widgets.append(path)
+                    # Auto-calculate shade and highlight
+                    elif "Shade" in path:
+                        entry.color = calculate_shade(hex_color)
+                        updated_widgets.append(path)
+                    elif "Highlight" in path:
+                        entry.color = calculate_highlight(hex_color)
+                        updated_widgets.append(path)
+                    break
+        
+        # Update UI widgets for all affected entries
+        self.update_color_widgets(updated_widgets)
+        
+        self.update_preview()
+        self.status_var.set(f"Applied {color_id} ({hex_color}) to all items in {group_name}")
+    
+    def update_group_color_from_entry(self, group_name: str, color_id: str, entry: ttk.Entry, button: tk.Button):
+        """Update group color from manual hex entry"""
+        color_value = entry.get().strip()
+        
+        # Validate hex color
+        if not color_value.startswith('#'):
+            color_value = '#' + color_value
+        
+        try:
+            # Try to use the color
+            button.configure(bg=color_value)
+            self.apply_group_color(group_name, color_id, color_value)
+        except tk.TclError:
+            messagebox.showerror("Error", f"Invalid color value: {color_value}")
+            entry.delete(0, tk.END)
+            entry.insert(0, "#000000")
     
     def create_other_items_section(self, item_names: List[str]):
         """Create a section for non-grouped items"""
@@ -508,8 +578,8 @@ class PaletteEditor:
         color_entry.bind('<Return>', lambda e: self.update_color_from_entry(path, color_entry, color_btn))
         color_entry.bind('<FocusOut>', lambda e: self.update_color_from_entry(path, color_entry, color_btn))
         
-        # Store references
-        color_btn.color_entry_widget = color_entry
+        # Store references in the color entry
+        self.color_entries[path].widgets = (color_btn, color_entry)
     
     def choose_color(self, path: str, button: tk.Button):
         """Open color chooser dialog"""
@@ -519,8 +589,12 @@ class PaletteEditor:
         if color[1]:  # color[1] is the hex value
             self.color_entries[path].color = color[1]
             button.configure(bg=color[1])
-            button.color_entry_widget.delete(0, tk.END)
-            button.color_entry_widget.insert(0, color[1])
+            
+            # Update the hex entry field
+            if self.color_entries[path].widgets:
+                _, text_entry = self.color_entries[path].widgets
+                text_entry.delete(0, tk.END)
+                text_entry.insert(0, color[1])
             
             # Auto-calculate shade and highlight if this is a base color (Color 1-5)
             if any(f"Color {i}" in path for i in range(1, 6)):
@@ -529,13 +603,19 @@ class PaletteEditor:
                 shade_path = f"{base_path}.Shade"
                 highlight_path = f"{base_path}.Highlight"
                 
+                updated_paths = []
                 if shade_path in self.color_entries:
                     shade_color = calculate_shade(color[1])
                     self.color_entries[shade_path].color = shade_color
+                    updated_paths.append(shade_path)
                 
                 if highlight_path in self.color_entries:
                     highlight_color = calculate_highlight(color[1])
                     self.color_entries[highlight_path].color = highlight_color
+                    updated_paths.append(highlight_path)
+                
+                # Update widgets for shade and highlight
+                self.update_color_widgets(updated_paths)
             
             self.update_preview()
     
@@ -559,13 +639,19 @@ class PaletteEditor:
                 shade_path = f"{base_path}.Shade"
                 highlight_path = f"{base_path}.Highlight"
                 
+                updated_paths = []
                 if shade_path in self.color_entries:
                     shade_color = calculate_shade(color_value)
                     self.color_entries[shade_path].color = shade_color
+                    updated_paths.append(shade_path)
                 
                 if highlight_path in self.color_entries:
                     highlight_color = calculate_highlight(color_value)
                     self.color_entries[highlight_path].color = highlight_color
+                    updated_paths.append(highlight_path)
+                
+                # Update widgets for shade and highlight
+                self.update_color_widgets(updated_paths)
             
             self.update_preview()
         except tk.TclError:
@@ -606,6 +692,70 @@ class PaletteEditor:
             self.status_var.set("Preview updated")
         except Exception as e:
             messagebox.showerror("Error", f"Failed to generate preview: {str(e)}")
+    
+    def import_texture(self):
+        """Import an existing texture PNG and extract dominant colors per region"""
+        if not self.palette_data:
+            messagebox.showerror("Error", "Please load or create a configuration first")
+            return
+        
+        filename = filedialog.askopenfilename(
+            title="Import Texture PNG",
+            filetypes=[("PNG files", "*.png"), ("All files", "*.*")]
+        )
+        
+        if not filename:
+            return
+        
+        try:
+            # Load the image
+            img = Image.open(filename)
+            
+            # Verify it's 1024x1024
+            if img.size != (1024, 1024):
+                messagebox.showwarning("Warning", 
+                    f"Image size is {img.size[0]}x{img.size[1]}. Expected 1024x1024. Results may be inaccurate.")
+            
+            # Convert to RGB if needed
+            if img.mode != 'RGB':
+                img = img.convert('RGB')
+            
+            pixels = img.load()
+            updated_paths = []
+            
+            # Process each region
+            for path, entry in self.color_entries.items():
+                # Extract colors from this region
+                region_colors = []
+                for y in range(entry.y, min(entry.y + entry.height, img.size[1])):
+                    for x in range(entry.x, min(entry.x + entry.width, img.size[0])):
+                        color = pixels[x, y]
+                        # Convert to hex
+                        hex_color = f"#{color[0]:02x}{color[1]:02x}{color[2]:02x}"
+                        # Exclude black and white
+                        if hex_color not in ["#000000", "#ffffff"]:
+                            region_colors.append(hex_color)
+                
+                # Find the dominant color
+                if region_colors:
+                    # Count color occurrences
+                    color_counter = Counter(region_colors)
+                    dominant_color = color_counter.most_common(1)[0][0]
+                    
+                    # Update the entry
+                    entry.color = dominant_color
+                    updated_paths.append(path)
+            
+            # Update all UI widgets
+            self.update_color_widgets(updated_paths)
+            self.update_preview()
+            
+            self.status_var.set(f"Imported colors from {os.path.basename(filename)}")
+            messagebox.showinfo("Success", 
+                f"Successfully extracted dominant colors from texture.\n{len(updated_paths)} regions updated.")
+        
+        except Exception as e:
+            messagebox.showerror("Error", f"Failed to import texture: {str(e)}")
     
     def export_png(self):
         """Export the current palette as a PNG file"""
