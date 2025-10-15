@@ -72,4 +72,18 @@ Config/DefaultEditorUserSettings.ini
 # Ignore Git LFS pointer files if not using LFS
 *.lfs
 
+# Python and Palette Editor artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+env/
+ENV/
+build/
+dist/
+*.spec
+test_palette_output.png
+
 # 
