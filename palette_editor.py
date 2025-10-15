@@ -111,6 +111,7 @@ class PaletteEditor:
         self.group_frames = {}  # Maps group name -> frame widget
         self.group_expanded = {}  # Maps group name -> bool
         self.group_color_widgets = {}  # Maps (group_name, color_id) -> (button, entry)
+        self.parent_regions = set()  # Set of paths for parent regions (with sub-regions)
         
         self.setup_ui()
         
@@ -267,6 +268,9 @@ class PaletteEditor:
         self.group_frames.clear()
         self.group_expanded = {}
         
+        # Identify parent regions (regions that have sub-regions)
+        self.parent_regions = self._find_parent_regions(self.palette_data)
+        
         # Create grouped sections
         self.create_group_section("Clothing", self.CLOTHING_GROUP)
         self.create_group_section("Attachments", self.ATTACHMENTS_GROUP)
@@ -283,6 +287,40 @@ class PaletteEditor:
         
         # Update preview
         self.update_preview()
+    
+    def _find_parent_regions(self, data, path="", parents=None):
+        """Recursively find all regions that have sub-regions (parent regions)"""
+        if parents is None:
+            parents = set()
+        
+        if isinstance(data, list):
+            for i, item in enumerate(data):
+                new_path = f"{path}.{i}" if path else str(i)
+                self._find_parent_regions(item, new_path, parents)
+        
+        elif isinstance(data, dict):
+            # Check if this dict has position and color info
+            has_position = all(k in data for k in ["Start X", "Start Y", "Width", "Height"])
+            
+            if has_position and "Color" in data:
+                # Check if this region has any sub-regions with positions
+                has_sub_regions = False
+                for key, value in data.items():
+                    if key not in ["Start X", "Start Y", "Width", "Height", "Color"]:
+                        if isinstance(value, dict) and all(k in value for k in ["Start X", "Start Y", "Width", "Height"]):
+                            has_sub_regions = True
+                            break
+                
+                if has_sub_regions:
+                    parents.add(path)
+            
+            # Recurse into nested structures
+            for key, value in data.items():
+                if key not in ["Start X", "Start Y", "Width", "Height", "Color"]:
+                    new_path = f"{path}.{key}" if path else key
+                    self._find_parent_regions(value, new_path, parents)
+        
+        return parents
     
     def create_group_section(self, group_name: str, item_names: List[str]):
         """Create a collapsible section for a group"""
@@ -666,8 +704,16 @@ class PaletteEditor:
             img = Image.new('RGB', (1024, 1024), color='black')
             pixels = img.load()
             
-            # Fill regions with colors
+            # Fill regions with colors (skip parent regions and empty colors)
             for path, entry in self.color_entries.items():
+                # Skip parent regions (they have sub-regions)
+                if path in self.parent_regions:
+                    continue
+                
+                # Skip regions with empty or black colors
+                if not entry.color or entry.color == "" or entry.color == "#000000":
+                    continue
+                
                 # Convert hex to RGB
                 color_hex = entry.color.lstrip('#')
                 r, g, b = tuple(int(color_hex[i:i+2], 16) for i in (0, 2, 4))
@@ -694,7 +740,7 @@ class PaletteEditor:
             messagebox.showerror("Error", f"Failed to generate preview: {str(e)}")
     
     def import_texture(self):
-        """Import an existing texture PNG and extract dominant colors per region"""
+        """Import an existing texture PNG and extract colors per region from exact pixel positions"""
         if not self.palette_data:
             messagebox.showerror("Error", "Please load or create a configuration first")
             return
@@ -725,26 +771,15 @@ class PaletteEditor:
             
             # Process each region
             for path, entry in self.color_entries.items():
-                # Extract colors from this region
-                region_colors = []
-                for y in range(entry.y, min(entry.y + entry.height, img.size[1])):
-                    for x in range(entry.x, min(entry.x + entry.width, img.size[0])):
-                        color = pixels[x, y]
-                        # Convert to hex
-                        hex_color = f"#{color[0]:02x}{color[1]:02x}{color[2]:02x}"
-                        # Exclude black and white
-                        if hex_color not in ["#000000", "#ffffff"]:
-                            region_colors.append(hex_color)
-                
-                # Find the dominant color
-                if region_colors:
-                    # Count color occurrences
-                    color_counter = Counter(region_colors)
-                    dominant_color = color_counter.most_common(1)[0][0]
+                # Sample the exact pixel at the region's start position
+                if entry.x < img.size[0] and entry.y < img.size[1]:
+                    color = pixels[entry.x, entry.y]
+                    hex_color = f"#{color[0]:02x}{color[1]:02x}{color[2]:02x}"
                     
-                    # Update the entry
-                    entry.color = dominant_color
-                    updated_paths.append(path)
+                    # Only update if the pixel is not black (skip unmapped/empty regions)
+                    if hex_color != "#000000":
+                        entry.color = hex_color
+                        updated_paths.append(path)
             
             # Update all UI widgets
             self.update_color_widgets(updated_paths)
@@ -752,7 +787,7 @@ class PaletteEditor:
             
             self.status_var.set(f"Imported colors from {os.path.basename(filename)}")
             messagebox.showinfo("Success", 
-                f"Successfully extracted dominant colors from texture.\n{len(updated_paths)} regions updated.")
+                f"Successfully extracted colors from texture.\n{len(updated_paths)} regions updated.")
         
         except Exception as e:
             messagebox.showerror("Error", f"Failed to import texture: {str(e)}")
