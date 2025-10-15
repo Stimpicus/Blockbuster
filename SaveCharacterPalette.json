@@ -1,0 +1,349 @@
+{
+  "sections": {
+    "head": {
+      "region": {
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      "categories": {
+        "skin": {
+          "colors": [
+            {
+              "base": "",
+              "shade": "",
+              "highlight": ""
+            }
+          ]
+        },
+        "eyes": {
+          "colors": [
+            {
+              "base": "",
+              "shade": "",
+              "highlight": ""
+            }
+          ]
+        },
+        "pupils": {
+          "colors": [
+            {
+              "base": ""
+            }
+          ]
+        }
+      }
+    },
+    "hair": {
+      "region": {
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      "categories": {
+        "primary": {
+          "colors": [
+            {
+              "base": "",
+              "shade": "",
+              "highlight": ""
+            }
+          ]
+        },
+        "secondary": {
+          "colors": [
+            {
+              "base": "",
+              "shade": "",
+              "highlight": ""
+            }
+          ]
+        }
+      }
+    },
+    "torso": {
+      "region": {
+        "x": 0,
+        "y": 64,
+        "width": 64,
+        "height": 96
+      },
+      "categories": {
+        "skin": {
+          "colors": [
+            {
+              "base": "",
+              "shade": "",
+              "highlight": ""
+            }
+          ]
+        },
+        "shirt": {
+          "colors": [
+            {
+              "base": "",
+              "shade": "",
+              "highlight": ""
+            }
+          ]
+        },
+        "vest": {
+          "colors": [
+            {
+              "base": "",
+              "shade": "",
+              "highlight": ""
+            }
+          ]
+        }
+      }
+    },
+    "arms": {
+      "region": {
+        "x": 64,
+        "y": 64,
+        "width": 64,
+        "height": 96
+      },
+      "categories": {
+        "skin": {
+          "colors": [
+            {
+              "base": "",
+              "shade": "",
+              "highlight": ""
+            }
+          ]
+        },
+        "sleeves": {
+          "colors": [
+            {
+              "base": "",
+              "shade": "",
+              "highlight": ""
+            }
+          ]
+        },
+        "gloves": {
+          "colors": [
+            {
+              "base": "",
+              "shade": "",
+              "highlight": ""
+            }
+          ]
+        }
+      }
+    },
+    "hands": {
+      "region": {
+        "x": 128,
+        "y": 0,
+        "width": 32,
+        "height": 32
+      },
+      "categories": {
+        "skin": {
+          "colors": [
+            {
+              "base": "",
+              "shade": "",
+              "highlight": ""
+            }
+          ]
+        },
+        "nails": {
+          "colors": [
+            {
+              "base": ""
+            }
+          ]
+        }
+      }
+    },
+    "legs": {
+      "region": {
+        "x": 0,
+        "y": 160,
+        "width": 64,
+        "height": 96
+      },
+      "categories": {
+        "skin": {
+          "colors": [
+            {
+              "base": "",
+              "shade": "",
+              "highlight": ""
+            }
+          ]
+        },
+        "pants": {
+          "colors": [
+            {
+              "base": "",
+              "shade": "",
+              "highlight": ""
+            }
+          ]
+        },
+        "belt": {
+          "colors": [
+            {
+              "base": "",
+              "shade": "",
+              "highlight": ""
+            }
+          ]
+        }
+      }
+    },
+    "feet": {
+      "region": {
+        "x": 64,
+        "y": 160,
+        "width": 64,
+        "height": 64
+      },
+      "categories": {
+        "shoes": {
+          "colors": [
+            {
+              "base": "",
+              "shade": "",
+              "highlight": ""
+            }
+          ]
+        },
+        "laces": {
+          "colors": [
+            {
+              "base": ""
+            }
+          ]
+        },
+        "soles": {
+          "colors": [
+            {
+              "base": "",
+              "shade": "",
+              "highlight": ""
+            }
+          ]
+        }
+      }
+    },
+    "accessories": {
+      "region": {
+        "x": 128,
+        "y": 32,
+        "width": 64,
+        "height": 64
+      },
+      "categories": {
+        "hat": {
+          "colors": [
+            {
+              "base": "",
+              "shade": "",
+              "highlight": ""
+            }
+          ]
+        },
+        "scarf": {
+          "colors": [
+            {
+              "base": "",
+              "shade": "",
+              "highlight": ""
+            }
+          ]
+        },
+        "badge": {
+          "colors": [
+            {
+              "base": ""
+            }
+          ]
+        }
+      }
+    },
+    "facial_features": {
+      "region": {
+        "x": 128,
+        "y": 96,
+        "width": 32,
+        "height": 32
+      },
+      "categories": {
+        "eyebrows": {
+          "colors": [
+            {
+              "base": "",
+              "shade": "",
+              "highlight": ""
+            }
+          ]
+        },
+        "mouth": {
+          "colors": [
+            {
+              "base": ""
+            }
+          ]
+        },
+        "nose": {
+          "colors": [
+            {
+              "base": ""
+            }
+          ]
+        },
+        "blush": {
+          "colors": [
+            {
+              "base": ""
+            }
+          ]
+        }
+      }
+    },
+    "background": {
+      "region": {
+        "x": 0,
+        "y": 256,
+        "width": 256,
+        "height": 256
+      },
+      "categories": {
+        "primary": {
+          "colors": [
+            {
+              "base": ""
+            }
+          ]
+        },
+        "gradient": {
+          "colors": [
+            {
+              "base": "",
+              "shade": "",
+              "highlight": ""
+            }
+          ]
+        }
+      }
+    }
+  },
+  "metadata": {
+    "version": "1.0",
+    "description": "Character palette mapping system for PNG generator workflow",
+    "total_regions": 10,
+    "canvas_dimensions": {
+      "width": 256,
+      "height": 512
+    }
+  }
+}
