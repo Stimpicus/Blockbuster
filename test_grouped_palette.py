@@ -77,10 +77,10 @@ def test_groups():
     # Test that items have Color 1-5 structure
     print("\nTesting Color 1-5 structure:")
     test_item_name = 'Torso'
+    colors_found = []  # Initialize to avoid potential NameError
     for item in palette_data:
         if list(item.keys())[0] == test_item_name:
             test_item = item[test_item_name]
-            colors_found = []
             for i in range(1, 6):
                 color_key = f"Color {i}"
                 if color_key in test_item:
@@ -92,6 +92,9 @@ def test_groups():
             
             print(f"Found {len(colors_found)}/5 color slots in {test_item_name}\n")
             break
+    else:
+        # Torso not found in palette data
+        print(f"  ⚠ Warning: {test_item_name} not found in palette data\n")
     
     # Summary
     success = (len(clothing_missing) == 0 and 
